@@ -270,3 +270,50 @@ nav ul li a:hover {
   margin-top: 40px;
   font-size: 16px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Stack navigation links for mobile */
+  nav ul {
+    flex-direction: column;
+    display: none; /* Hide by default */
+  }
+
+  /* Toggle menu display when active */
+  nav ul.active {
+    display: flex;
+    background-color: #1f1f1f;
+  }
+
+  /* Mobile-specific styling for sections */
+  header,
+  .hero,
+  .about,
+  .menu,
+  .order,
+  .contact {
+    padding: 50px 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .about h1,
+  .menu h1,
+  .order h1,
+  .contact h1 {
+    font-size: 28px;
+  }
+
+  .menu-item h2,
+  .contact-info,
+  .order label,
+  .contact label {
+    font-size: 14px;
+  }
+}
